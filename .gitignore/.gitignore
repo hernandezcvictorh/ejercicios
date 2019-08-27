@@ -1,0 +1,23 @@
+ public static void main(String[] args) {
+        float notas, prom;
+        String nombre, val;
+        int i,cont=0;
+        Scanner leer = new Scanner(System.in);
+        int[] promedio = new int[5];
+        do{
+            do {
+                cont++;
+                System.out.println("ingrese nombre del alumno: ");
+                nombre = leer.next();
+                do {
+                    do {
+                        System.out.println("ingrese la nota");
+                        notas = leer.nextFloat();
+                    } while (!(notas >= 1 && notas <= 7));
+
+                    System.out.println("desea agregar una nota mas");
+                    val = leer.next();
+                } while (val.equals("si"));
+            } while (val.equals("no")&&cont==5);
+        }while(cont==5);
+    }
