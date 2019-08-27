@@ -1,4 +1,6 @@
-public static void main(String[] args) {
+public class EstaSi {
+
+    public static void main(String[] args) {
         float nota, notas = 0, acu = 0;
         String nombre, cond;
         int cont = 0, n = 0;
@@ -31,3 +33,5 @@ public static void main(String[] args) {
         System.out.println(prom[0]);
         System.out.println(prom[1]);
     }
+}
+
